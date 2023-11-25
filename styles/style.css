@@ -1,0 +1,82 @@
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url("/assets/background.png");
+    background-repeat:repeat;
+    background-size: 100%;
+}
+
+.logo-mk11 {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card {
+    cursor: pointer;
+    filter: grayscale();
+    width: 20%;
+}
+
+.card:hover {
+    filter: none;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80.5%;
+}
+
+.inputs img {
+    padding: 10px;
+    height: 60px;
+}
+
+input {
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 48.5%;
+}
+
+.fight-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+    padding: 10px;
+    width: 80.5%;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    transition: .3s;
+}
+
+.fight-btn img {
+    width: 60px;
+}
+
+.fight-btn:hover {
+    border: 1px solid #fbac18;
+}
