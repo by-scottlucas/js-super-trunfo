@@ -12,60 +12,86 @@
 
 <body>
 
-    <main class="container-fluid">
+    <main class="container">
 
         <img src="/assets/logo-mk11.png" alt="logo" class="logo-mk11">
 
-        <section class="cards container">
+        <section class="cards">
 
             <article class="card">
-                <img src="/assets/01.png" alt="sub-zero">
+                <img src="/assets/01.png" alt="sub-zero" onclick="pegarCard()">
+                <input type="radio" name="teste" value="subzero" class="input-card">
             </article>
 
             <article class="card">
-                <img src="/assets/02.png" alt="scorpion">
+                <img src="/assets/02.png" alt="scorpion" onclick="pegarCard()">
+                <input type="radio" name="card" value="scorpion" class="input-card">
             </article>
 
             <article class="card">
-                <img src="/assets/03.png" alt="raiden">
+                <img src="/assets/03.png" alt="raiden" onclick="pegarCard()">
+                <input type="radio" name="card" value="raiden" class="input-card">
             </article>
 
             <article class="card">
-                <img src="/assets/04.png" alt="liu kang">
+                <img src="/assets/04.png" alt="liu kang" onclick="pegarCard()">
+                <input type="radio" name="card" value="liuKang" class="input-card">
             </article>
 
             <article class="card">
-                <img src="/assets/05.png" alt="kung lao">
+                <img src="/assets/05.png" alt="kung lao" onclick="pegarCard()">
+                <input type="radio" name="card" value="kungLao" class="input-card">
             </article>
 
             <article class="card">
-                <img src="/assets/06.png" alt="mileena">
+                <img src="/assets/06.png" alt="mileena" onclick="pegarCard()">
+                <input type="radio" name="card" value="mileena" class="input-card">
             </article>
 
             <article class="card">
-                <img src="/assets/07.png" alt="kitana">
+                <img src="/assets/07.png" alt="kitana" onclick="pegarCard()">
+                <input type="radio" name="card" value="kitana" class="input-card">
             </article>
 
             <article class="card">
-                <img src="/assets/08.png" alt="frost">
+                <img src="/assets/08.png" alt="frost" onclick="pegarCard()">
+                <input type="radio" name="card" value="frost" class="input-card">
             </article>
 
             <article class="card">
-                <img src="/assets/09.png" alt="cassie cage">
+                <img src="/assets/09.png" alt="cassie cage" onclick="pegarCard()">
+                <input type="radio" name="card" value="cassieCage" class="input-card">
             </article>
 
-            <article class="card">
+            <article class="card" onclick="pegarCard()">
                 <img src="/assets/10.png" alt="jacqui briggs">
+                <input type="radio" name="card" value="jacquiBriggs" class="input-card">
             </article>
 
         </section>
 
-        <section class="game">
+        <section class="game" id="fight" style="display: none;">
 
-            <article class="inputs">
-                <input type="text" id="player1" disabled>
-                <img src="/assets/vs-logo.png">
-                <input type="text" id="player2" disabled>
+            <article class="cards-battle">
+
+                <div class="card1">
+
+                    <div id="card1"></div>
+
+                    <p id="atributos"></p>
+
+                </div>
+
+                <img src="/assets/vs-logo.png" class="vs">
+
+                <div class="card2">
+
+                    <div id="card2"></div>
+
+                    <p id="atributos"></p>
+
+                </div>
+
             </article>
 
             <button class="fight-btn"><img src="/assets/fight.png"></button>

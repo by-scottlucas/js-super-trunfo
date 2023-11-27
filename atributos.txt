@@ -1,0 +1,6 @@
+Força;
+Agilidade;
+Magia
+Resistência
+Técnica de Combate
+Inteligência
