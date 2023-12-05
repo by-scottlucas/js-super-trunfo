@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -35,7 +35,7 @@ body {
     filter: grayscale(100%);
 }
 
-.input-card{
+.input-card {
     cursor: pointer;
     opacity: 0%;
     width: 100%;
@@ -44,7 +44,7 @@ body {
 }
 
 .card:hover {
-    filter:none;
+    filter: none;
 }
 
 .game {
@@ -59,14 +59,16 @@ body {
     justify-content: center;
 }
 
-.card1, .card2{
+.card1,
+.card2 {
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card1 img, .card2 img{
+.card1 img,
+.card2 img {
     width: 200px;
     padding: 10px;
 }
@@ -75,6 +77,52 @@ body {
 .vs {
     margin-top: -7%;
     width: 4%;
+}
+
+.atributos {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-option {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+    background-color: #1b1b1b;
+}
+
+.atributo-btn{
+    height: 40px;
+}
+
+.atributo-btn p {
+    color: #fff;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input:checked + .atributo-btn {
+    width: 100%;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #e49a12;
+}
+
+.atributo {
+    cursor: pointer;
+    opacity: 0%;
+    width: 40px;
+    position: absolute;
 }
 
 input {

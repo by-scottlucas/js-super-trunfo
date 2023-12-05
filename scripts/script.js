@@ -1,61 +1,61 @@
 // Cartas e seus Atributos
 
 const subZero = {
-    nome: "Sub-Zero", imagem: "./assets/01.png", atributos: {
+    atributos: {
         forca: 10, agilidade: 5, magia: 5, combate: 8
     }
 }
 
 const scorpion = {
-    nome: "Scorpion", imagem: "./assets/02.png", atributos: {
+    atributos: {
         forca: 8, agilidade: 6, magia: 4, combate: 9
     }
 }
 
 const raiden = {
-    nome: "Raiden", imagem: "./assets/03.png", atributos: {
+    atributos: {
         forca: 9, agilidade: 8, magia: 10, combate: 6
     }
 }
 
 const liuKang = {
-    nome: "Liu Kang", imagem: "./assets/04.png", atributos: {
+    atributos: {
         forca: 10, agilidade: 10, magia: 5, combate: 10
     }
 }
 
 const kungLao = {
-    nome: "Kung Lao", imagem: "./assets/05.png", atributos: {
+    atributos: {
         forca: 10, agilidade: 10, magia: 5, combate: 7
     }
 }
 
 const mileena = {
-    nome: "Mileena", imagem: "./assets/06.png", atributos: {
+    atributos: {
         forca: 6, agilidade: 10, magia: 7, combate: 8
     }
 }
 
 const kitana = {
-    nome: "Kitana", imagem: "./assets/07.png", atributos: {
+    atributos: {
         forca: 6, agilidade: 10, magia: 8, combate: 9
     }
 }
 
 const frost = {
-    nome: "Frost", imagem: "./assets/08.png", atributos: {
+    atributos: {
         forca: 8, agilidade: 8, magia: 5, combate: 4
     }
 }
 
 const cassieCage = {
-    nome: "Cassie Cage", imagem: "./assets/09.png", atributos: {
+    atributos: {
         forca: 10, agilidade: 6, magia: 2, combate: 8
     }
 }
 
 const jacquiBriggs = {
-    nome: "Jacqui Briggs", imagem: "./assets/10.png", atributos: {
+    atributos: {
         forca: 10, agilidade: 8, magia: 4, combate: 5
     }
 }
@@ -85,7 +85,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('subzero').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${subZero.atributos.forca}` + `<br>Agilidade: ${subZero.atributos.agilidade}` + `<br>Magia: ${subZero.atributos.magia}` + `<br>Combate: ${subZero.atributos.combate}`;
 
         }
 
@@ -94,7 +93,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('scorpion').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${scorpion.atributos.forca}` + `<br>Agilidade: ${scorpion.atributos.agilidade}` + `<br>Magia: ${scorpion.atributos.magia}` + `<br>Combate: ${scorpion.atributos.combate}`;
 
         }
 
@@ -103,7 +101,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('raiden').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${raiden.atributos.forca}` + `<br>Agilidade: ${raiden.atributos.agilidade}` + `<br>Magia: ${raiden.atributos.magia}` + `<br>Combate: ${raiden.atributos.combate}`;
 
         }
 
@@ -112,7 +109,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('liuKang').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${liuKang.atributos.forca}` + `<br>Agilidade: ${liuKang.atributos.agilidade}` + `<br>Magia: ${liuKang.atributos.magia}` + `<br>Combate: ${liuKang.atributos.combate}`;
 
         }
 
@@ -121,7 +117,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('kungLao').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${kungLao.atributos.forca}` + `<br>Agilidade: ${kungLao.atributos.agilidade}` + `<br>Magia: ${kungLao.atributos.magia}` + `<br>Combate: ${kungLao.atributos.combate}`;
 
         }
 
@@ -130,7 +125,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('mileena').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${mileena.atributos.forca}` + `<br>Agilidade: ${mileena.atributos.agilidade}` + `<br>Magia: ${mileena.atributos.magia}` + `<br>Combate: ${mileena.atributos.combate}`;
 
         }
 
@@ -139,7 +133,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('kitana').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${kitana.atributos.forca}` + `<br>Agilidade: ${kitana.atributos.agilidade}` + `<br>Magia: ${kitana.atributos.magia}` + `<br>Combate: ${kitana.atributos.combate}`;
 
         }
 
@@ -148,7 +141,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('frost').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${frost.atributos.forca}` + `<br>Agilidade: ${frost.atributos.agilidade}` + `<br>Magia: ${frost.atributos.magia}` + `<br>Combate: ${frost.atributos.combate}`;
 
         }
 
@@ -157,7 +149,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('cassieCage').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${cassieCage.atributos.forca}` + `<br>Agilidade: ${cassieCage.atributos.agilidade}` + `<br>Magia: ${cassieCage.atributos.magia}` + `<br>Combate: ${cassieCage.atributos.combate}`;
 
         }
 
@@ -166,7 +157,6 @@ function pegarCard() {
             card1.appendChild(img);
             document.getElementById('jacquiBriggs').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos1').innerHTML = `Força: ${jacquiBriggs.atributos.forca}` + `<br>Agilidade: ${jacquiBriggs.atributos.agilidade}` + `<br>Magia: ${jacquiBriggs.atributos.magia}` + `<br>Combate: ${jacquiBriggs.atributos.combate}`;
 
         }
 
@@ -177,7 +167,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('subzero').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${subZero.atributos.forca}` + `<br>Agilidade: ${subZero.atributos.agilidade}` + `<br>Magia: ${subZero.atributos.magia}` + `<br>Combate: ${subZero.atributos.combate}`;
 
         }
 
@@ -186,7 +175,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('scorpion').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${scorpion.atributos.forca}` + `<br>Agilidade: ${scorpion.atributos.agilidade}` + `<br>Magia: ${scorpion.atributos.magia}` + `<br>Combate: ${scorpion.atributos.combate}`;
 
         }
 
@@ -195,7 +183,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('raiden').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${raiden.atributos.forca}` + `<br>Agilidade: ${raiden.atributos.agilidade}` + `<br>Magia: ${raiden.atributos.magia}` + `<br>Combate: ${raiden.atributos.combate}`;
 
         }
 
@@ -204,7 +191,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('liuKang').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${liuKang.atributos.forca}` + `<br>Agilidade: ${liuKang.atributos.agilidade}` + `<br>Magia: ${liuKang.atributos.magia}` + `<br>Combate: ${liuKang.atributos.combate}`;
 
         }
 
@@ -213,7 +199,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('kungLao').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${kungLao.atributos.forca}` + `<br>Agilidade: ${kungLao.atributos.agilidade}` + `<br>Magia: ${kungLao.atributos.magia}` + `<br>Combate: ${kungLao.atributos.combate}`;
 
         }
 
@@ -222,7 +207,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('mileena').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${mileena.atributos.forca}` + `<br>Agilidade: ${mileena.atributos.agilidade}` + `<br>Magia: ${mileena.atributos.magia}` + `<br>Combate: ${mileena.atributos.combate}`;
 
         }
 
@@ -231,7 +215,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('kitana').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${kitana.atributos.forca}` + `<br>Agilidade: ${kitana.atributos.agilidade}` + `<br>Magia: ${kitana.atributos.magia}` + `<br>Combate: ${kitana.atributos.combate}`;
 
         }
 
@@ -240,7 +223,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('frost').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${frost.atributos.forca}` + `<br>Agilidade: ${frost.atributos.agilidade}` + `<br>Magia: ${frost.atributos.magia}` + `<br>Combate: ${frost.atributos.combate}`;
 
         }
 
@@ -249,7 +231,6 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('cassieCage').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${cassieCage.atributos.forca}` + `<br>Agilidade: ${cassieCage.atributos.agilidade}` + `<br>Magia: ${cassieCage.atributos.magia}` + `<br>Combate: ${cassieCage.atributos.combate}`;
 
         }
 
@@ -258,8 +239,41 @@ function pegarCard() {
             card2.appendChild(img);
             document.getElementById('jacquiBriggs').style.display = 'none';
             document.getElementById('fight').style.display = '';
-            document.getElementById('atributos2').innerHTML = `Força: ${jacquiBriggs.atributos.forca}` + `<br>Agilidade: ${jacquiBriggs.atributos.agilidade}` + `<br>Magia: ${jacquiBriggs.atributos.magia}` + `<br>Combate: ${jacquiBriggs.atributos.combate}`;
 
+        }
+
+        document.getElementById("tabuleiro").style.display = "none";
+        document.getElementById("figth").style.display = "block";
+    }
+}
+
+function pegarAtributo() {
+
+    let atributoSelect = [];
+    let atributo = document.getElementsByName('atributos');
+
+    for (let i = 0; i < atributo.length; i++) {
+        if (atributo[i].checked) {
+            console.log("Atributo: " + atributo[i].value);
+            atributoSelect.push(atributo[i].value);
         }
     }
 }
+
+// function fight() {
+
+//     let cartasSelect = cardSelect.join(cartas).toString();
+//     let atributoSelected = atributoSelect;
+
+
+//     if ((card2 !== null && card2.getElementsByTagName('img').length === 0) && (card1 !== null && card1.getElementsByTagName('img').length === 0)) {
+//         if (atributoSelected == "Força") {
+//             if (cartas)
+//                 alert("Atributo: " + atributo);
+//         }
+
+//         console.log("Carta: " + cartasSelect);
+//     }
+
+
+// }

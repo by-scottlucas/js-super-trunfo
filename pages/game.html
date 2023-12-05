@@ -15,9 +15,9 @@
 
     <main class="container">
 
-        <img src="../assets/logo-mk11.png" alt="logo" class="logo-mk11">
+        <!-- <img src="../assets/logo-mk11.png" alt="logo" class="logo-mk11"> -->
 
-        <section class="cards">
+        <section class="cards" id="tabuleiro">
 
             <article class="card" onclick="pegarCard()" id="subzero">
                 <img src="../assets/01.png" alt="subzero">
@@ -95,7 +95,39 @@
 
             </article>
 
-            <button class="fight-btn"><img src="../assets/fight.png"></button>
+            <div class="atributos">
+
+                <div class="btn-option" onclick="pegarAtributo()">
+                    <input type="radio" name="atributos" value="Força" class="atributo">
+                    <div class="atributo-btn">
+                        <p>Força</p>
+                    </div>
+                </div>
+
+                <div class="btn-option" onclick="pegarAtributo()">
+                    <input type="radio" name="atributos" value="Agilidade" class="atributo">
+                    <div class="atributo-btn">
+                        <p>Agilidade</p>
+                    </div>
+                </div>
+
+                <div class="btn-option" onclick="pegarAtributo()">
+                    <input type="radio" name="atributos" value="Agilidade" class="atributo">
+                    <div class="atributo-btn">
+                        <p>Magia</p>
+                    </div>
+                </div>
+
+                <div class="btn-option" onclick="pegarAtributo()">
+                    <input type="radio" name="atributos" value="Combate" class="atributo">
+                    <div class="atributo-btn">
+                        <p>Combate</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="fight-btn" onclick="fight()" style="display: none;" id="figth"><img src="../assets/fight.png"></button>
 
         </section>
 
