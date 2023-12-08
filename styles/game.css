@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/mkx-title');
+
 * {
     margin: 0;
     padding: 0;
@@ -114,8 +116,9 @@ body {
 input:checked + .atributo-btn {
     width: 100%;
     font-weight: bold;
+    color: #1b1b1b;
     border-radius: 4px;
-    background-color: #e49a12;
+    background-color: #b67804;
 }
 
 .atributo {
@@ -133,11 +136,16 @@ input {
 }
 
 .fight-btn {
+    text-transform: uppercase;
+    font-family: 'MKX Title';
+    letter-spacing: 1.2px;
+    font-size: 1.8rem;
+    padding: 9px;
+    color: #e49a12;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     width: 100%;
     border: none;
     border-radius: 4px;
@@ -145,10 +153,29 @@ input {
     transition: .3s;
 }
 
-.fight-btn img {
-    width: 60px;
+.fight-btn:hover {
+    border: 1px solid #fbac18;
 }
 
-.fight-btn:hover {
+.play-again-btn {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'MKX Title';
+    letter-spacing: 1.2px;
+    font-size: 1.8rem;
+    padding: 9px;
+    color: #e49a12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    transition: .3s;
+}
+
+.play-again-btn:hover {
     border: 1px solid #fbac18;
 }
