@@ -27,9 +27,8 @@ body {
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .card {
@@ -71,13 +70,13 @@ body {
 
 .card1 img,
 .card2 img {
-    width: 200px;
+    width: 300px;
     padding: 10px;
 }
 
 
 .vs {
-    width: 4%;
+    width: 6%;
 }
 
 .atributos {
@@ -99,7 +98,7 @@ body {
     background-color: #1b1b1b;
 }
 
-.atributo-btn{
+.atributo-btn {
     height: 40px;
 }
 
@@ -109,10 +108,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-input:checked + .atributo-btn {
+input:checked+.atributo-btn {
     width: 100%;
     font-weight: bold;
     color: #1b1b1b;

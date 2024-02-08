@@ -75,7 +75,7 @@ function pegarCard() {
 
         if (cardSelect == 'subzero') {
             carta1 = cartas[0];
-            img.src = '../assets/01.png';
+            img.src = '../../assets/01.png';
             card1.appendChild(img);
             document.getElementById('subzero').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -84,7 +84,7 @@ function pegarCard() {
 
         else if (cardSelect == 'scorpion') {
             carta1 = cartas[1];
-            img.src = '../assets/02.png';
+            img.src = '../../assets/02.png';
             card1.appendChild(img);
             document.getElementById('scorpion').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -93,7 +93,7 @@ function pegarCard() {
 
         else if (cardSelect == 'raiden') {
             carta1 = cartas[2];
-            img.src = '../assets/03.png';
+            img.src = '../../assets/03.png';
             card1.appendChild(img);
             document.getElementById('raiden').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -102,7 +102,7 @@ function pegarCard() {
 
         else if (cardSelect == 'liuKang') {
             carta1 = cartas[3];
-            img.src = '../assets/04.png';
+            img.src = '../../assets/04.png';
             card1.appendChild(img);
             document.getElementById('liuKang').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -111,7 +111,7 @@ function pegarCard() {
 
         else if (cardSelect == 'kungLao') {
             carta1 = cartas[4];
-            img.src = '../assets/05.png';
+            img.src = '../../assets/05.png';
             card1.appendChild(img);
             document.getElementById('kungLao').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -120,7 +120,7 @@ function pegarCard() {
 
         else if (cardSelect == 'mileena') {
             carta1 = cartas[5];
-            img.src = '../assets/06.png';
+            img.src = '../../assets/06.png';
             card1.appendChild(img);
             document.getElementById('mileena').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -129,7 +129,7 @@ function pegarCard() {
 
         else if (cardSelect == 'kitana') {
             carta1 = cartas[6];
-            img.src = '../assets/07.png';
+            img.src = '../../assets/07.png';
             card1.appendChild(img);
             document.getElementById('kitana').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -138,7 +138,7 @@ function pegarCard() {
 
         else if (cardSelect == 'frost') {
             carta1 = cartas[7];
-            img.src = '../assets/08.png';
+            img.src = '../../assets/08.png';
             card1.appendChild(img);
             document.getElementById('frost').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -147,7 +147,7 @@ function pegarCard() {
 
         else if (cardSelect == 'cassieCage') {
             carta1 = cartas[8];
-            img.src = '../assets/09.png';
+            img.src = '../../assets/09.png';
             card1.appendChild(img);
             document.getElementById('cassieCage').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -155,18 +155,21 @@ function pegarCard() {
         }
 
         else {
-            img.src = '../assets/10.png';
+            img.src = '../../assets/10.png';
             carta1 = cartas[9];
             card1.appendChild(img);
             document.getElementById('jacquiBriggs').style.display = 'none';
             document.getElementById('fight').style.display = '';
         }
+        
+        document.getElementById("tabuleiro").style.display = "flex";
+        document.getElementById("tabuleiro").style.flexDirection = "row";
 
     } else if (card2 !== null && card2.getElementsByTagName('img').length === 0) {
 
         if (cardSelect == 'subzero') {
             carta2 = cartas[0];
-            img.src = '../assets/01.png';
+            img.src = '../../assets/01.png';
             card2.appendChild(img);
             document.getElementById('subzero').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -175,7 +178,7 @@ function pegarCard() {
 
         else if (cardSelect == 'scorpion') {
             carta2 = cartas[1];
-            img.src = '../assets/02.png';
+            img.src = '../../assets/02.png';
             card2.appendChild(img);
             document.getElementById('scorpion').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -184,7 +187,7 @@ function pegarCard() {
 
         else if (cardSelect == 'raiden') {
             carta2 = cartas[2];
-            img.src = '../assets/03.png';
+            img.src = '../../assets/03.png';
             card2.appendChild(img);
             document.getElementById('raiden').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -193,7 +196,7 @@ function pegarCard() {
 
         else if (cardSelect == 'liuKang') {
             carta2 = cartas[3];
-            img.src = '../assets/04.png';
+            img.src = '../../assets/04.png';
             card2.appendChild(img);
             document.getElementById('liuKang').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -202,7 +205,7 @@ function pegarCard() {
 
         else if (cardSelect == 'kungLao') {
             carta2 = cartas[4];
-            img.src = '../assets/05.png';
+            img.src = '../../assets/05.png';
             card2.appendChild(img);
             document.getElementById('kungLao').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -211,7 +214,7 @@ function pegarCard() {
 
         else if (cardSelect == 'mileena') {
             carta2 = cartas[5];
-            img.src = '../assets/06.png';
+            img.src = '../../assets/06.png';
             card2.appendChild(img);
             document.getElementById('mileena').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -220,7 +223,7 @@ function pegarCard() {
 
         else if (cardSelect == 'kitana') {
             carta2 = cartas[6];
-            img.src = '../assets/07.png';
+            img.src = '../../assets/07.png';
             card2.appendChild(img);
             document.getElementById('kitana').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -229,7 +232,7 @@ function pegarCard() {
 
         else if (cardSelect == 'frost') {
             carta2 = cartas[7];
-            img.src = '../assets/08.png';
+            img.src = '../../assets/08.png';
             card2.appendChild(img);
             document.getElementById('frost').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -238,7 +241,7 @@ function pegarCard() {
 
         else if (cardSelect == 'cassieCage') {
             carta2 = cartas[8];
-            img.src = '../assets/09.png';
+            img.src = '../../assets/09.png';
             card2.appendChild(img);
             document.getElementById('cassieCage').style.display = 'none';
             document.getElementById('fight').style.display = '';
@@ -246,7 +249,7 @@ function pegarCard() {
         }
 
         else {
-            img.src = '../assets/10.png';
+            img.src = '../../assets/10.png';
             carta2 = cartas[9];
             card2.appendChild(img);
             document.getElementById('jacquiBriggs').style.display = 'none';
