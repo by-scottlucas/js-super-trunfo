@@ -6,7 +6,7 @@
     height: 100vh;
 }
 
-.cards {
+.cartas {
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -40,7 +40,7 @@
     filter: none;
 }
 
-.game {
+.cartas-select {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,7 +79,7 @@
     align-items: center;
 }
 
-.btn-option {
+.atributo-option {
     position: relative;
     display: flex;
     justify-content: center;

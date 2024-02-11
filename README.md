@@ -1,4 +1,4 @@
-# JavaScript - Super Trunfo : Mortal Kombat
+# JavaScript - Super Trunfo: Mortal Kombat
 
 Este projeto foi desenvolvido para fins de estudo sobre funções e eventos em Javascript.
 
