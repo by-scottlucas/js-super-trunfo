@@ -1,0 +1,15 @@
+{
+    "name": "MK Super Trunfo",
+    "short_name": "MK Super Trunfo",
+    "start_url": "/js-super-trunfo/",
+    "display": "standalone",
+    "background_color": "#212129",
+    "theme_color": "#2b7be4",
+    "icons": [
+        {
+            "src": "./assets/images/icon-mk11.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
