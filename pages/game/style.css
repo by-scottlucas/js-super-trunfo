@@ -6,15 +6,20 @@
     height: 100vh;
 }
 
+
+/* SEÇÃO TABULEIRO DAS CARTAS */
+
 .cartas {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.cardBox {
+.card-box {
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +29,7 @@
 }
 
 .card {
-    width: 75%;
+    width: 100%;
 }
 
 .input-card {
@@ -36,17 +41,21 @@
     position: absolute;
 }
 
-.cardBox:hover {
+.card-box:hover {
     filter: none;
 }
 
-.cartas-select {
+
+/* SEÇÃO BOX GAME */
+
+.game-box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .cards-battle {
+    gap: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +63,7 @@
 
 .card1,
 .card2 {
+    width: 42%;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -62,19 +72,19 @@
 
 .card1 img,
 .card2 img {
-    width: 300px;
-    padding: 10px;
+    width: 100%;
 }
-
 
 .vs {
     width: 6%;
 }
 
 .atributos {
-    margin: 0 auto;
-    width: 50%;
+    margin: 15px auto;
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
 }
@@ -85,9 +95,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    width: 100px;
+    width: 48%;
     height: 40px;
-    margin: 20px;
+    /* margin: 20px; */
     background-color: #1b1b1b;
 }
 
@@ -126,7 +136,7 @@ input {
 
 .fight-btn,
 .play-again-btn {
-    margin: 0 auto;
+    margin: 20px auto;
     text-transform: uppercase;
     font-family: 'MKX Title';
     letter-spacing: 1.2px;
@@ -137,7 +147,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 90%;
     border: none;
     border-radius: 4px;
     background-color: black;
