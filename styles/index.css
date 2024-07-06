@@ -46,3 +46,40 @@
 .button:focus {
     border: 0.2px solid #fbac18;
 }
+
+
+/* ********** MEDIA QUERIES ********** */
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+
+    .button {
+        height: 60px;
+    }
+
+    .button a {
+        font-size: 2.2rem;
+        letter-spacing: 3px;
+    }
+
+}
+
+
+/* DESKTOPS */
+
+@media screen and (min-width: 1024px) {
+
+    .card-play-box {
+        width: 35%;
+    }
+
+    .button {
+        height: 50px;
+    }
+
+    .button a {
+        font-size: 1.8rem;
+    }
+
+}

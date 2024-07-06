@@ -19,7 +19,7 @@
 }
 
 .card-box {
-    width: 20%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +63,7 @@
 
 .card1,
 .card2 {
-    width: 42%;
+    width: 38%;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -76,7 +76,8 @@
 }
 
 .vs {
-    width: 6%;
+    width: 12%;
+    margin: 0px 10px;
 }
 
 .atributos {
@@ -98,10 +99,11 @@
     width: 48%;
     height: 40px;
     /* margin: 20px; */
-    background-color: #1b1b1b;
+    background-color: #000;
 }
 
 .atributo-btn {
+    cursor: pointer;
     font-family: 'Calibri';
     font-weight: bold;
     color: #fff;
@@ -114,6 +116,7 @@
 
 input:checked+.atributo-btn {
     width: 100%;
+    height: 100%;
     font-weight: bold;
     color: #1b1b1b;
     border-radius: 4px;
@@ -161,4 +164,78 @@ input {
 .play-again-btn:focus {
     cursor: pointer;
     border: 1px solid #fbac18;
+}
+
+
+/* ********** MEDIA QUERIES ********** */
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+
+    .card-box {
+        width: 22%;
+    }
+
+    .fight-btn,
+    .play-again-btn {
+        height: 70px;
+    }
+
+    .game-box {
+        margin-top: 25px;
+    }
+
+    .vs {
+        width: 12%;
+        margin: 0px 15px;
+    }
+
+    .card1,
+    .card2 {
+        width: 32%;
+    }
+
+    .atributo-option {
+        width: 23%;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+}
+
+
+/* DESKTOPS */
+
+@media screen and (min-width: 1024px) {
+
+    .card-box {
+        width: 14%;
+    }
+
+    .game-box {
+        margin-top: 25px;
+    }
+
+    .vs{
+        width: 6%;
+        margin: 0px 20px;
+    }
+
+    .card1,
+    .card2 {
+        width: 18%;
+    }
+
+    .fight-btn,
+    .play-again-btn {
+        width: 45%;
+        height: 60px;
+    }
+
+    .atributo-option {
+        width: 24%;
+        height: 50px;
+        font-size: 1.4rem;
+    }
 }

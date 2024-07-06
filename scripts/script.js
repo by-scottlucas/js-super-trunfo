@@ -109,6 +109,27 @@ function pegarCarta() {
         document.getElementById("cartas").style.display = "flex";
         document.getElementById("cartas").style.flexDirection = "row";
 
+        const cardBoxes = document.querySelectorAll(".card-box");
+
+        if (innerWidth < 768) {
+            cardBoxes.forEach(carta => {
+                carta.style.width = "20%";
+            });
+        }
+
+        if (innerWidth >= 768) {
+            cardBoxes.forEach(carta => {
+                carta.style.width = "16%";
+            });
+        }
+
+        if (innerWidth >= 1024) {
+            cardBoxes.forEach(carta => {
+                carta.style.width = "8%";
+            });
+        }
+
+
     } else if (card2 !== null && card2.getElementsByTagName('img').length === 0) {
 
         switch (cartaSelecionada[0]) {
