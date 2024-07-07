@@ -1,3 +1,15 @@
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-size: 100%;
+    height: 100vh;
+    background-image: url("../assets/images/background.png");
+} */
+
 .container {
     height: 100vh;
     display: flex;
