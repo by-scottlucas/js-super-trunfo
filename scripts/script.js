@@ -227,66 +227,79 @@ function pegarAtributo() {
 
 }
 
-function figth() {
+function openModal(atributoSelected, atributosPoints, player) {
+    document.getElementById('atributo-selected').innerText = atributoSelected;
+    document.getElementById('atributos-points').innerText = atributosPoints;
+    document.getElementById('player-ganhador').innerText = player;
+    document.getElementById('message-modal').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('message-modal').style.display = 'none';
+}
+
+function fight() {
+    let atributoSelected = '';
+    let atributosPoints = '';
+    let player = '';
 
     switch (atributoSelecionado.pop()) {
-
         case "Força":
-
             if (carta1.atributos.forca > carta2.atributos.forca) {
-                alert(carta1.nome + " - Força:  " + carta1.atributos.forca + "  VS  " + carta2.nome + " - Força:  " + carta2.atributos.forca);
-                alert(carta1.nome + " Wins!!!");
+                atributoSelected = 'Força';
+                atributosPoints = `${carta1.nome}: ${carta1.atributos.forca} vs ${carta2.nome}: ${carta2.atributos.forca}`;
+                player = `${carta1.nome} Wins!!!`;
             } else {
-                alert(carta1.nome + " - Força:  " + carta1.atributos.forca + "  VS  " + carta2.nome + " - Força:  " + carta2.atributos.forca);
-                alert(carta2.nome + " Wins!!!");
+                atributoSelected = 'Força';
+                atributosPoints = `${carta1.nome}: ${carta1.atributos.forca} vs ${carta2.nome}: ${carta2.atributos.forca}`;
+                player = `${carta2.nome} Wins!!!`;
             }
-
             break;
-
         case "Agilidade":
-
             if (carta1.atributos.agilidade > carta2.atributos.agilidade) {
-                alert(carta1.nome + " - Agilidade:  " + carta1.atributos.agilidade + " VS  " + carta2.nome + " - Agilidade:  " + carta2.atributos.agilidade);
-                alert(carta1.nome + " Wins!!!");
+                atributoSelected = 'Agilidade';
+                atributosPoints = `${carta1.nome}: ${carta1.atributos.agilidade} vs ${carta2.nome}: ${carta2.atributos.agilidade}`;
+                player = `${carta1.nome} Wins!!!`;
             } else {
-                alert(carta1.nome + " - Agilidade:  " + carta1.atributos.agilidade + "  VS  " + carta2.nome + " - Agilidade:  " + carta2.atributos.agilidade);
-                alert(carta2.nome + " Wins!!!");
+                atributoSelected = 'Agilidade';
+                atributosPoints = `${carta1.nome}: ${carta1.atributos.agilidade} vs ${carta2.nome}: ${carta2.atributos.agilidade}`;
+                player = `${carta2.nome} Wins!!!`;
             }
             break;
-
         case "Magia":
-
             if (carta1.atributos.magia > carta2.atributos.magia) {
-                alert(carta1.nome + " - Magia:  " + carta1.atributos.magia + "  VS  " + carta2.nome + " - Magia:  " + carta2.atributos.magia);
-                alert(carta1.nome + " Wins!!!");
+                atributoSelected = 'Magia';
+                atributosPoints = `${carta1.nome}: ${carta1.atributos.magia} vs ${carta2.nome}: ${carta2.atributos.magia}`;
+                player = `${carta1.nome} Wins!!!`;
             } else {
-                alert(carta1.nome + " - Magia:  " + carta1.atributos.magia + "  VS  " + carta2.nome + " - Magia:  " + carta2.atributos.magia);
-                alert(carta2.nome + " Wins!!!");
+                atributoSelected = 'Magia';
+                atributosPoints = `${carta1.nome}: ${carta1.atributos.magia} vs ${carta2.nome}: ${carta2.atributos.magia}`;
+                player = `${carta2.nome} Wins!!!`;
             }
             break;
-
-        case 'Combate':
-
+        case "Combate":
             if (carta1.atributos.combate > carta2.atributos.combate) {
-                alert(carta1.nome + " - Combate:  " + carta1.atributos.combate + "  VS  " + carta2.nome + " - Combate:  " + carta2.atributos.combate);
-                alert(carta1.nome + " Wins!!!");
+                atributoSelected = 'Combate';
+                atributosPoints = `${carta1.nome}: ${carta1.atributos.combate} vs ${carta2.nome}: ${carta2.atributos.combate}`;
+                player = `${carta1.nome} Wins!!!`;
             } else {
-                alert(carta1.nome + " - Combate:  " + carta1.atributos.combate + "  VS  " + carta2.nome + " - Combate:  " + carta2.atributos.combate);
-                alert(carta2.nome + " Wins!!!");
+                atributoSelected = 'Combate';
+                atributosPoints = `${carta1.nome}: ${carta1.atributos.combate} vs ${carta2.nome}: ${carta2.atributos.combate}`;
+                player = `${carta2.nome} Wins!!!`;
             }
             break;
-
         default:
             break;
     }
 
+    openModal(atributoSelected, atributosPoints, player);
 
     document.getElementById("atributos").style.display = "none";
     document.getElementById("fight-btn").style.display = "none";
     document.getElementById("play-again").style.display = "block";
-
 }
 
 function playAgain() {
+    closeModal();
     window.location.reload();
 }

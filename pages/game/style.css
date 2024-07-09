@@ -1,15 +1,3 @@
-/* body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background-size: 100%;
-    height: 100vh;
-    background-image: url("../../assets/images/background.png");
-} */
-
 .container {
     display: flex;
     flex-direction: column;
@@ -149,8 +137,7 @@ input {
     width: 48.5%;
 }
 
-.fight-btn,
-.play-again-btn {
+.fight-btn {
     margin: 20px auto;
     text-transform: uppercase;
     font-family: 'MKX Title';
@@ -171,12 +158,91 @@ input {
 }
 
 .fight-btn:hover,
-.fight-btn:focus,
-.play-again-btn:hover,
-.play-again-btn:focus {
+.fight-btn:focus {
     cursor: pointer;
     border: 1px solid #fbac18;
 }
+
+
+/* ESTILOS MODAL */
+
+
+
+.modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9999999999;
+}
+
+.modal-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 4px;
+    background-color: #000;
+    border: #fbac18 1px solid;
+}
+
+.modal-content {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-modal {
+    width: 20%;
+    margin-bottom: 25px;
+}
+
+#atributo-selected {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+#atributos-points {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#player-ganhador {
+    color: #e49a12;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: 'MKX Title';
+    letter-spacing: 1.2px;
+}
+
+.play-again-btn {
+    text-transform: uppercase;
+    font-family: 'MKX Title';
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 54px;
+    color: #e49a12;
+    border: none;
+    border-radius: 2px;
+    background-color: black;
+    transition: .3s;
+    border: 1px solid #e49a12;
+}
+
+.play-again-btn:hover,
+.play-again-btn:focus {
+    cursor: pointer;
+}
+
 
 
 /* ********** MEDIA QUERIES ********** */
@@ -229,7 +295,7 @@ input {
         margin-top: 25px;
     }
 
-    .vs{
+    .vs {
         width: 6%;
         margin: 0px 20px;
     }
