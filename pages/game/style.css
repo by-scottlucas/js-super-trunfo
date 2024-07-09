@@ -7,6 +7,60 @@
 }
 
 
+.volume-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-top: 20px;
+    margin: 0 auto;
+    background: #000;
+    width: 70%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #fbac18;
+}
+
+.title-volume-range {
+    color: #FFF;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.volume-range {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a linha de fundo do controle deslizante */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background: #5e3d00;
+    outline: none;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+/* Estilizando o polegar do controle deslizante */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fbac18;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease-in-out;
+}
+
+
 /* SEÇÃO TABULEIRO DAS CARTAS */
 
 .cartas {
@@ -188,6 +242,7 @@ input {
 }
 
 .modal-content {
+    color: #FFF;
     padding: 35px;
     display: flex;
     align-items: center;
@@ -357,5 +412,5 @@ input {
         height: 60px;
         font-size: 1.6rem;
     }
-    
+
 }
