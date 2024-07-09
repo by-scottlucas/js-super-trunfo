@@ -15,15 +15,35 @@
 
     <main class="container">
 
-        <div class="volume-box" style="display: none;">
-            <p class="title-volume-range">Volume da música</p>
-            <input type="range" id="volume-range" class="volume-range" min="0" max="1" step="0.01" value="0.5">
-        </div>
+        <button class="sound-btn" id="open-modal">
+            <img src="../../assets/images/icon-sound.png" alt="icon-sound" class="icon-sound">
+        </button>
 
-        <audio id="game-music" loop>
-            <source src="../../assets/sounds/MK11_Main_Theme.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <!-- Modal Volume -->
+        <div class="modal-overlay" id="music-modal">
+            <div class="modal-box music-box">
+                <div class="modal-content music-content">
+
+                    <img src="../../assets/images/icon-mk11.png" alt="logotipo" class="logo-modal music-logo">
+
+                    <div class="volume-box">
+                        <p class="title-volume-range">Volume da música</p>
+                        <input type="range" id="volume-range" class="volume-range" min="0" max="1" step="0.01"
+                            value="0.5">
+
+                        <button class="play-again-btn btn-confirma-volume" onclick="closeModal()">
+                            Confirmar
+                        </button>
+                    </div>
+
+                    <audio id="game-music" loop>
+                        <source src="../../assets/sounds/MK11_Main_Theme.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                </div>
+            </div>
+        </div>
 
         <section class="cartas" id="cartas">
             <div onclick="pegarCarta()" id="subzero" class="card-box">
@@ -111,7 +131,7 @@
                 </div>
             </div>
 
-            <button class="fight-btn" id="fight-btn" onclick="fight()">Figth</button>
+            <button class="fight-btn" id="fight-btn" onclick="fight()">Fight</button>
         </section>
     </main>
 
@@ -137,6 +157,13 @@
     <script src="../../scripts/script.js"></script>
 
     <script>
+        // Função para fechar o modal de ajuste de volume
+        function closeModal() {
+            const modal = document.getElementById('music-modal');
+            modal.style.display = 'none';
+        }
+
+        // Registro do Service Worker para cache e offline mode
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/js-super-trunfo/utils/service-worker.js').then(registration => {
@@ -147,11 +174,13 @@
             });
         }
 
-        // Apply saved volume setting
+        // Quando o DOM estiver completamente carregado
         document.addEventListener('DOMContentLoaded', (event) => {
             const savedVolume = localStorage.getItem('gameVolume');
             const audio = document.getElementById('game-music');
             const volumeRange = document.getElementById('volume-range');
+
+            // Define o volume inicial a partir do localStorage ou padrão para 0.5
             if (savedVolume) {
                 audio.volume = savedVolume;
                 volumeRange.value = savedVolume;
@@ -159,24 +188,34 @@
                 audio.volume = 0.5;
                 volumeRange.value = 0.5;
             }
+
+            // Toca o áudio ao carregar a página
             audio.play().catch(error => {
                 console.error('Falha ao reproduzir áudio:', error);
             });
 
+            // Event listener para ajuste de volume
             volumeRange.addEventListener('input', function () {
                 audio.volume = this.value;
                 localStorage.setItem('gameVolume', this.value);
             });
-        });
 
-        window.onclick = function (event) {
-            const modal = document.getElementById('message-modal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        
+            // Abre o modal de ajuste de volume ao clicar no botão
+            const openModalBtn = document.getElementById('open-modal');
+            const modal = document.getElementById('music-modal');
+            openModalBtn.addEventListener('click', () => {
+                modal.style.display = 'block'; // Garante que o modal seja exibido corretamente
+            });
+
+            // Fecha o modal se o usuário clicar fora dele
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        });
     </script>
+
 </body>
 
 </html>

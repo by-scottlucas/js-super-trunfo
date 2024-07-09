@@ -6,24 +6,41 @@
     height: 100vh;
 }
 
+.sound-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    background-color: #000;
+    border: none;
+}
+
+.sound-btn img {
+    width: 45%;
+}
+
+.music-box {
+    margin: 60% auto;
+}
 
 .volume-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
     margin-top: 20px;
     margin: 0 auto;
-    background: #000;
-    width: 70%;
-    padding: 20px;
-    margin-bottom: 10px;
-    border: 1px solid #fbac18;
+    width: 100%;
 }
 
 .title-volume-range {
     color: #FFF;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
@@ -57,7 +74,12 @@ input[type="range"]::-webkit-slider-thumb {
     background: #fbac18;
     cursor: pointer;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
-    transition: background 0.3s ease-in-out;
+}
+
+.btn-confirma-volume {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    height: 45px !important;
 }
 
 
@@ -303,6 +325,37 @@ input {
 
 @media screen and (min-width: 768px) {
 
+    .sound-btn {
+        width: 68px;
+        height: 68px;
+    }
+
+    .music-box {
+        margin: 50% auto;
+    }
+
+    .title-volume-range {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    /* Estilizando a linha de fundo do controle deslizante */
+    input[type="range"] {
+        margin: 40px auto;
+        height: 12px;
+    }
+
+    /* Estilizando o polegar do controle deslizante */
+    input[type="range"]::-webkit-slider-thumb {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .btn-confirma-volume {
+        height: 75px !important;
+    }
+
     .card-box {
         width: 22%;
     }
@@ -360,6 +413,38 @@ input {
 /* DESKTOPS */
 
 @media screen and (min-width: 1024px) {
+
+    .sound-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .music-box {
+        margin: 8% auto;
+    }
+
+    .title-volume-range {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    /* Estilizando a linha de fundo do controle deslizante */
+    input[type="range"] {
+        margin: 30px auto;
+        height: 10px;
+    }
+
+    /* Estilizando o polegar do controle deslizante */
+    input[type="range"]::-webkit-slider-thumb {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .btn-confirma-volume {
+        font-size: 1.5rem !important;
+        height: 60px !important;
+    }
 
     .card-box {
         width: 14%;
